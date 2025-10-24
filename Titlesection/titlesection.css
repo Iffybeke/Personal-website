@@ -10,6 +10,15 @@
 	background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
 	background-position: center top;
 }
+
+.title-section-header {
+	margin-bottom: -5px;
+}
+
+.title-section-subtitle {
+	margin-bottom: 40px;
+}
+
 .titlesection-button {
 	color: var(--titleSectionPrimaryColor);
 	border: solid var(--titleSectionPrimaryColor) 1px;
@@ -18,7 +27,7 @@
 	background-color: transparent;
 }
 
-
+ijomi
 button:hover {
 	background-color: var(--titleSectionPrimaryColor);
 	color: var(--titleSectionSecondaryColor);
