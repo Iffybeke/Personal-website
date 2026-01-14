@@ -4,12 +4,16 @@
 
 .aboutme-section-description {
     text-align: justify;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .aboutme-icons {
     font-size: 20px;
     margin-top: 45px;
+}
+
+.aboutme-icons > a {
+    text-decoration: none;
 }
 
 .aboutme-icon{
