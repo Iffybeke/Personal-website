@@ -20,3 +20,32 @@
     background-size: cover;
     background-position: center-top;
 }
+
+.Craps-game-registration {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+.Craps-registration-input{
+    background: none;
+    border: none;
+    border-bottom: solid white 1px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+.Craps-registration-input:focus {
+    outline-width: 0;
+}
+.Craps-registration-continue{
+    margin-top: 25px;
+}
+
+
+.Craps-registration-continue:hover{
+    cursor: pointer;
+    font-weight: bold;}
