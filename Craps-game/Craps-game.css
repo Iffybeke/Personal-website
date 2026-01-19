@@ -1,0 +1,55 @@
+#Craps-game {
+    background-image: url(../Images/matthias-mullie-NF9s89qIaL0-unsplash.jpg);
+    color: white;
+    background-position: center-top;
+}
+
+.Craps-game-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+.Craps-game-container {
+   width: min(700px, 80vw);
+    height: min(500px, 60vw);
+    border: 2px solid white;
+    margin: 100 auto 0 auto;
+    background-image: url(../Images/jonathan-petersson-W8V3G-Nk8FE-unsplash.jpg);
+    background-size: cover;
+    background-position: center-top;
+}
+
+#Craps-game-registration {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+.Craps-registration-input{
+    background: none;
+    border: none;
+    border-bottom: solid white 1px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+.Craps-registration-input:focus {
+    outline-width: 0;
+}
+.Craps-registration-continue{
+    margin-top: 25px;
+}
+
+
+.Craps-registration-continue:hover{
+    cursor: pointer;
+    font-weight: bold;}
+
+#Craps-main-section {
+    display: none;
+}

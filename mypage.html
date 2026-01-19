@@ -2,6 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="./Titlesection/titlesection.css">
 		<link rel="stylesheet" href="./About me/aboutmesection.css">
+		<link rel="stylesheet" href="./Craps-game/Craps-game.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap">
 		<link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 	</head>
@@ -42,9 +43,27 @@
 						<i class="aboutme-icon fa-solid fa-envelope"></i>
 					</a>
 				</div>
-	
-	</div>
-	
+			</div>
+
+		<div class="main-section" id="Craps-game">
+				<h1 class="Craps-game-title">Craps Casino Game</h1>
+				<div class="Craps-game-container">
+					<div id="Craps-game-registration">
+						<div>
+							Enter username to begin
+						</div>
+						<div>
+							<input class=" Craps-registration-input" id="Craps-username-input">
+						</div>
+						<div class="Craps-registration-continue" onclick="registerPlayer()">
+								Start Game
+						</div>
+					</div>
+				<div id="Craps-main-section">
+							MAIN SECTION HERE
+				</div>
+			</div>	
+			</div>
 </body>
 <html>
 
@@ -83,6 +102,8 @@
 	}
 
 </style>
+<script src="./Craps-game/Craps-game.js">
+</script>
 
 <script>
 function makeDreamComeTrue() {
@@ -90,5 +111,4 @@ function makeDreamComeTrue() {
 	document.body.style.background = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4-J2wM3f0jPXNESU-2d2i01wlk_QGGLpvgw&s")';
 	document.getElementById("title").style.visibility = "hidden";
 }
-
 </script>
