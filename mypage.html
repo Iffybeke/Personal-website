@@ -3,11 +3,12 @@
 		<link rel="stylesheet" href="./Titlesection/titlesection.css">
 		<link rel="stylesheet" href="./About me/aboutmesection.css">
 		<link rel="stylesheet" href="./Craps-game/Craps-game.css">
-		<link rel="stylesheet" href="./crapsgame/utils.css">
+		<link rel="stylesheet" href="./Craps-game/utils.css">
+		<link rel="stylesheet" href="./randomQuoteGenerator/randomQuoteGenerator.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap">
 		<link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 	</head>
-<boby>
+<body onload="getNewRandomQuote()">
 	<div class="main-section" id="title">
 		<h1 class="title-section-header">Ifeoma Chukwuka</h1>
 		<p class="title-section-subtitle">Journey to being a Software Programmer</p>
@@ -47,6 +48,8 @@
 			</div>
 
 		<div class="main-section" id="craps-game">
+
+			
         <div class="craps-game-title">Craps Casino Game</div>
         <div class="craps-game-container">
             <div id="craps-registration-pane">
@@ -110,8 +113,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+		</div>	
     </div>
+	 <div class="main-section" id="random-quote-generator">
+        <div>
+            <div id="random-quote-title">RANDOM QUOTE GENERATOR</div>
+            <div id="random-quote-text"></div>
+            <div id="random-quote-author"></div>
+            <div id="new-random-quote" onclick="getNewRandomQuote()">New Quote</div>
+        </div>
 </body>
 <html>
 
@@ -151,6 +161,7 @@
 
 </style>
 <script src="./Craps-game/Craps-game.js"></script>
+<script src="./randomQuoteGenerator/randomQuoteGenerator.js"></script>
 <script type="text/javascript" src="https://unpkg.com/roll-a-die@2.0.1/dist/roll-a-die.js"></script>
 <script>
 
