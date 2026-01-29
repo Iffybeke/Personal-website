@@ -1,175 +1,125 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="./Titlesection/titlesection.css">
-		<link rel="stylesheet" href="./About me/aboutmesection.css">
-		<link rel="stylesheet" href="./Craps-game/Craps-game.css">
-		<link rel="stylesheet" href="./Craps-game/utils.css">
-		<link rel="stylesheet" href="./randomQuoteGenerator/randomQuoteGenerator.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap">
-		<link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-	</head>
-<body onload="getNewRandomQuote()">
-	<div class="main-section" id="title">
-		<h1 class="title-section-header">Ifeoma Chukwuka</h1>
-		<p class="title-section-subtitle">Journey to being a Software Programmer</p>
-		<button class="titlesection-button" onclick="makeDreamComeTrue()">Make Dreams Come True</button>
-	</div>
-
-	<div class="misc-section" id="aboutme">
-		<div class="text-block-container">
-			<h1>About Me</h1>
-			<P class="aboutme-section-description">I am an emerging software developer passionate about technology and innovation. 
-			Though new to programming, i am dedicated to mastering core coding concepts and applying them 
-			to build practical, efficient solutions. I am focused on continuous learning, hands-on projects, 
-			and collaborations to strengthen my techincal foundation and professional growth. This website 
-			documents my learning journey and showcases projects that reflect my progress and evolving skills.
-			My goal is to build a meaningful career in software development and contribute to creating
-			 impactful technological solutions that improve everyday experiences and drive positive change.
-			</P>
-		</div>
-
-				<div class="aboutme-icons">
-					<a href="https://www.facebook.com/ifeoma.chukwuka.750?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
-						<i class="aboutme-icon fa-brands fa-facebook"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/ifeoma-chukwuka-39458b230" target="_blank">
-						<i class="aboutme-icon fa-brands fa-linkedin-in"></i>
-					</a>	
-					<a href="https://www.instagram.com/iffy_beykay?igsh=MXMyeThzdWE3c3FIOQ==" target="_blank">
-						<i class="aboutme-icon fa-brands fa-instagram"></i>
-					</a>
-					<a href="https://x.com.iffy_beykay?t=7YbLriqajKnKfX0mVCRaSA&s=09" target="_blank">
-						<i class="aboutme-icon fa-brands fa-x-twitter"></i>
-					</a>
-					<a href="mailto: blessing.ifeomac@gmail.com" target="_blank">
-						<i class="aboutme-icon fa-solid fa-envelope"></i>
-					</a>
-				</div>
-			</div>
-
-		<div class="main-section" id="craps-game">
-
-			
-        <div class="craps-game-title">Craps Casino Game</div>
-        <div class="craps-game-container">
-            <div id="craps-registration-pane">
-                <div>
-                    Enter username to begin
-                </div>
-                <div>
-                    <input class="craps-registration-input" id="craps-username-input">
-                </div>
-                <div class="craps-registration-continue" onclick="registerCrapsPlayer()">
-                    Continue
-                </div>
-            </div>
-            <div id="craps-main-section">
-                <div class="craps-main-section-stats">
-                    <div>
-                        Welcome, <span id="craps-stats-username"></span>
-                    </div>
-                    <div id="craps-stats-money-container">
-                        $<span id="craps-stats-money"></span>
-                    </div>
-                    <div>
-                        Rounds: <span id="craps-stats-rounds"></span>
-                    </div>
-                </div>
-                <div class="craps-on-table-container">
-                    <div id="craps-roll-dice-button" class="craps-roll-dice-container no-select" onclick="rollDice()">Roll Dice <i class="fas fa-dice"></i></div>
-                    <div id="craps-roll-dice-animation-container"></div>
-                </div>
-                <div class="craps-round-manager no-select">
-                    <div id="craps-betting-grid-container">
-                        <div class="craps-betting-grid no-select">
-                            <div class="craps-bet-button" id="EVEN" onclick="betEven()">
-                                EVEN
-                            </div>
-                            <div class="craps-bet-amount-container">
-                                <span class="craps-user-bet-amount-change" onclick="decreaseBet()">-</span>
-                                <span id="craps-user-bet-amount">$100</span>
-                                <span class="craps-user-bet-amount-change" onclick="increaseBet()">+</span>
-                            </div>
-                            <div class="craps-bet-button" id="ODD" onclick="betOdd()">
-                                ODD
-                            </div>
-                        </div>
-                    </div>
-                    <div id="craps-round-finish-grid-container">
-                        <div class="craps-round-finish-grid no-select">
-                            <div id="craps-next-round-button" class="craps-round-finish-button" onclick="setupNextRound()">
-                                NEXT ROUND
-                            </div>
-                            <div id="craps-next-round-button-disabled" class="craps-round-finish-button">
-                                NEXT ROUND
-                            </div>
-                            <div id="craps-round-finish-message">
-                                YOU WIN!
-                            </div>
-                            <div class="craps-round-finish-button" onclick="exitGame()">
-                                EXIT GAME
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</div>	
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ifeoma Chukwuka — Personal Website</title>
+    <link rel="stylesheet" href="./Titlesection/titlesection.css">
+    <link rel="stylesheet" href="./About me/aboutmesection.css">
+    <link rel="stylesheet" href="./Craps-game/Craps-game.css">
+    <link rel="stylesheet" href="./Craps-game/utils.css">
+    <link rel="stylesheet" href="./randomQuoteGenerator/randomQuoteGenerator.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body onload="getNewRandomQuote()">
+    <div class="main-section" id="title">
+      <h1 class="title-section-header">Ifeoma Chukwuka</h1>
+      <p class="title-section-subtitle">Journey to being a Software Programmer</p>
+      <button class="titlesection-button" onclick="makeDreamComeTrue()">Make Dreams Come True</button>
     </div>
-	 <div class="main-section" id="random-quote-generator">
-        <div>
-            <div id="random-quote-title">RANDOM QUOTE GENERATOR</div>
-            <div id="random-quote-text"></div>
-            <div id="random-quote-author"></div>
-            <div id="new-random-quote" onclick="getNewRandomQuote()">New Quote</div>
+
+    <div class="misc-section" id="aboutme">
+      <div class="text-block-container">
+        <h1>About Me</h1>
+        <p class="aboutme-section-description">I am an emerging software developer passionate about technology and innovation. 
+        Though new to programming, i am dedicated to mastering core coding concepts and applying them 
+        to build practical, efficient solutions. I am focused on continuous learning, hands-on projects, 
+        and collaborations to strengthen my techincal foundation and professional growth. This website 
+        documents my learning journey and showcases projects that reflect my progress and evolving skills.
+        My goal is to build a meaningful career in software development and contribute to creating
+         impactful technological solutions that improve everyday experiences and drive positive change.
+        </p>
+      </div>
+
+      <div class="aboutme-icons">
+        <a href="https://www.facebook.com/ifeoma.chukwuka.750?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+          <i class="aboutme-icon fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ifeoma-chukwuka-39458b230" target="_blank">
+          <i class="aboutme-icon fa-brands fa-linkedin-in"></i>
+        </a>  
+        <a href="https://www.instagram.com/iffy_beykay?igsh=MXMyeThzdWE3c3FIOQ==" target="_blank">
+          <i class="aboutme-icon fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/iffy_beykay?t=7YbLriqajKnKfX0mVCRaSA&s=09" target="_blank">
+          <i class="aboutme-icon fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="mailto: blessing.ifeomac@gmail.com" target="_blank">
+          <i class="aboutme-icon fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-section" id="craps-game">
+      <div class="craps-game-title">Craps Casino Game</div>
+      <div class="craps-game-container">
+        <div id="craps-registration-pane">
+          <div>Enter username to begin</div>
+          <div><input class="craps-registration-input" id="craps-username-input"></div>
+          <div class="craps-registration-continue" onclick="registerCrapsPlayer()">Continue</div>
         </div>
-</body>
-<html>
+        <div id="craps-main-section">
+          <div class="craps-main-section-stats">
+            <div>Welcome, <span id="craps-stats-username"></span></div>
+            <div id="craps-stats-money-container">$<span id="craps-stats-money"></span></div>
+            <div>Rounds: <span id="craps-stats-rounds"></span></div>
+          </div>
+          <div class="craps-on-table-container">
+            <div id="craps-roll-dice-button" class="craps-roll-dice-container no-select" onclick="rollDice()">Roll Dice <i class="fas fa-dice"></i></div>
+            <div id="craps-roll-dice-animation-container"></div>
+          </div>
+          <div class="craps-round-manager no-select">
+            <div id="craps-betting-grid-container">
+              <div class="craps-betting-grid no-select">
+                <div class="craps-bet-button" id="EVEN" onclick="betEven()">EVEN</div>
+                <div class="craps-bet-amount-container">
+                  <span class="craps-user-bet-amount-change" onclick="decreaseBet()">-</span>
+                  <span id="craps-user-bet-amount">$100</span>
+                  <span class="craps-user-bet-amount-change" onclick="increaseBet()">+</span>
+                </div>
+                <div class="craps-bet-button" id="ODD" onclick="betOdd()">ODD</div>
+              </div>
+            </div>
+            <div id="craps-round-finish-grid-container">
+              <div class="craps-round-finish-grid no-select">
+                <div id="craps-next-round-button" class="craps-round-finish-button" onclick="setupNextRound()">NEXT ROUND</div>
+                <div id="craps-next-round-button-disabled" class="craps-round-finish-button">NEXT ROUND</div>
+                <div class="craps-round-finish-message">YOU WIN!</div>
+                <div class="craps-round-finish-button" onclick="exitGame()">EXIT GAME</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
 
-<style>
-	* {box-sizing: border-box;
-	font-family: "Parkinsans", sans-serif;
-	
-	}
+    <div class="main-section" id="random-quote-generator">
+      <div>
+        <div id="random-quote-title">RANDOM QUOTE GENERATOR</div>
+        <div id="random-quote-text"></div>
+        <div id="random-quote-author"></div>
+        <div id="new-random-quote" onclick="getNewRandomQuote()">New Quote</div>
+      </div>
+    </div>
 
-	html, body {
-		margin: 0px;
-		padding: 0px;
-	}
+    <style>
+      * {box-sizing: border-box; font-family: "Parkinsans", sans-serif;}
+      html, body { margin: 0; padding: 0; }
+      .main-section { width: 100vw; height: 100vh; background-size: cover; padding: 25px; }
+      .misc-section { width: 100dvw; padding: 120px 25px; }
+      .text-block-container { width: 65%; margin: 0 auto; }
+      @media screen and (max-width: 500px) { .text-block-container { width: 100%; } }
+    </style>
 
-.main-section {
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-	padding: 25px;
-
-}
-.misc-section {
-	width: 100dvw;
-	padding: 120px 25px;
-}
-		
-
-	.text-block-container {
-		width: 65%;
-		margin: 0 auto;
-	}
-	@media screen and (max-width: 500px) {
-		.text-block-container {
-			width: 100%;
-		}
-	}
-
-</style>
-<script src="./Craps-game/Craps-game.js"></script>
-<script src="./randomQuoteGenerator/randomQuoteGenerator.js"></script>
-<script type="text/javascript" src="https://unpkg.com/roll-a-die@2.0.1/dist/roll-a-die.js"></script>
-<script>
-
-
-function makeDreamComeTrue() {
-	alert("Dream has come true")
-	document.body.style.background = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4-J2wM3f0jPXNESU-2d2i01wlk_QGGLpvgw&s")';
-	document.getElementById("title").style.visibility = "hidden";
-}
-
-</script>
+    <script src="./Craps-game/Craps-game.js"></script>
+    <script src="./randomQuoteGenerator/randomQuoteGenerator.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/roll-a-die@2.0.1/dist/roll-a-die.js"></script>
+    <script>
+      function makeDreamComeTrue() {
+        alert("Dream has come true");
+        document.body.style.background = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4-J2wM3f0jPXNESU-2d2i01wlk_QGGLpvgw&s")';
+        document.getElementById("title").style.visibility = "hidden";
+      }
+    </script>
+  </body>
+</html>
